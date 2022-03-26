@@ -11,8 +11,11 @@ def collatz(a):
         print("Please only enter integers")
 
 def getToOne():
-    a = int(input("Enter an integer: "))
-    while a != 1:
-        a = collatz(a)
+    try:
+        a = int(input("Enter an integer: "))
+        while a != 1:
+            a = collatz(a)
+    except ValueError:
+        print("Please only enter integers")
 
 getToOne()
