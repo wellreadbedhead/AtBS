@@ -7,6 +7,6 @@ def listToString(list):
             statement += "and " + item
         else:
             statement += item + ", "
-    print(statement)
+    return statement
 
-listToString(mylist)
+print(listToString(mylist))
